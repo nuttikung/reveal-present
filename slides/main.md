@@ -334,3 +334,27 @@ class Hello extends React.Component {
 
 ## Result 
 ![React Component Life Cycle WillMount](https://image.ibb.co/cbxwtc/react_component_life_cycle.png)
+
+
+
+# Training Code
+[Code](https://codepen.io/phuditc/pen/aGBqqR?editors=1010) 
+
+
+
+# Let's make todo app.
+![React Todo UI](https://preview.ibb.co/bRNzeH/react_todo.png)
+
+
+
+# Tools
+- [Create React App](https://github.com/facebook/create-react-app) (**Suggest**)
+- [Codepen](https://codepen.io)
+- [Stackblitz](https://stackblitz.com)
+
+
+
+# Maintanance Code
+<h3>Git is the best way such as github.</h3>
+
+
