@@ -3,7 +3,7 @@
 <p>Education : B.Sc(IT KMITL)</p>
 <p>Work : Sharmble Technology</p>
 
-[Sharmble Wb](https://sharmble.com)
+[Sharmble Web](https://sharmble.com)
 
 
 
