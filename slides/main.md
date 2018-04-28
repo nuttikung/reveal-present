@@ -737,7 +737,21 @@ $ npm install mongoose bluebird  --save
 # Connection
 ```javascript
 import mongoose from 'mongoose'
-mongoose.connect('mongodb://localhost/test')
+// const mongoUri = config.mongo.host
+mongoose.connect(mongoUri, {
+  reconnectTries: Number.MAX_VALUE, // Never stop trying to reconnect
+  reconnectInterval: 500, // Reconnect every 500ms
+  poolSize: 50, // Maintain up to 10 socket connections
+  promiseLibrary: Promise,
+  // If not connected, return errors immediately rather than waiting for reconnect
+  bufferMaxEntries: 0
+})
+mongoose.connection.once('open', () => {
+  console.log(`mongodb is connected!`)
+})
+mongoose.connection.on('error', () => {
+  throw new Error(`unable to connect to database: ${mongoUri}`)
+})
 ```
 
 
@@ -761,3 +775,20 @@ export default mongoose.model(`Task`, taskSchema)
 
 
 
+# React to Node
+```bash
+$ npm install axios --save
+```
+
+
+
+# Make Component
+- TodoList
+- TodoItems
+
+
+
+# .env (NODE)
+key=value
+# .env (REACT)
+REACT_APP_KEY=value
