@@ -358,3 +358,406 @@ class Hello extends React.Component {
 <h3>Git is the best way such as github.</h3>
 
 
+
+# Javascript Characteristic
+> <h3>Learn Once, Write Anywhere</h3>
+
+
+
+# What javascript can do?
+- Website
+- Mobile App
+- Destok App
+- Presentations
+- Game
+
+
+
+# Example
+![server nodejs](https://cdn0.froala.com/assets/editor/docs/server/meta-social/nodejs-34c5f8cc37f0756108c490a903d80176.png) <!-- .element height="30%" width="30%" -->
+![react js](https://reactjs.org/logo-og.png) <!-- .element height="30%" width="30%" -->
+![react native](https://filestore.hasura.io/v1/file/7723c234-4263-4599-9568-9d6788138c5b) <!-- .element height="15%" width="15%" -->
+![electron](https://camo.githubusercontent.com/627c774e3070482b180c3abd858ef2145d46303b/68747470733a2f2f656c656374726f6e6a732e6f72672f696d616765732f656c656374726f6e2d6c6f676f2e737667) <!-- .element height="30%" width="30%" -->
+![unity](https://unity3d.com/files/images/ogimg.jpg?1) <!-- .element height="30%" width="30%" -->
+
+
+
+# Web App Flow
+![REST API FLOW](https://cdn.app.compendium.com/uploads/user/e7c690e8-6ff9-102a-ac6d-e4aebca50425/f4a5b21d-66fa-4885-92bf-c4e81c06d916/Image/2344bb28bc75da26b24337547618c954/oneapi2.png)
+
+
+
+# Javascript Basic
+What did we learn from yesterday?
+
+**Method for ?**
+```javascript
+  const names = ['john','susan','jean']
+  names.map((name,index) => {
+    console.log(name)
+  })
+```
+
+
+
+# NPM ?
+Node Package Manager
+
+![node lego](https://d2eip9sf3oo6c2.cloudfront.net/series/square_covers/000/000/101/thumb/EGH_JS_NPM_Final.png)
+
+
+
+## Let's try
+```javascript
+console.log(5+6)
+```
+
+
+
+## Let's try
+```javascript
+console.log('1'+'3')
+```
+
+
+
+## Let's try
+```javascript
+let x = 2
+x = 4
+console.log(x)
+```
+
+
+
+## Let's try
+```javascript
+const y = 1
+y = 3
+console.log(y)
+```
+
+
+
+# Comment in Javascript
+**Single Line**
+```javascript
+//console.log(1)
+```
+**Multi Line**
+```javascript
+/*
+this
+code
+will
+not
+execute
+*/
+```
+
+
+
+# Case Sensitive
+- Hyphens
+<p>first-name, last-name, master-card, inter-city</p>
+- Underscore
+<p>first_name, last_name, master_card, inter_city</p>
+- Camel Case
+<p>FirstName, LastName, MasterCard, InterCity</p>
+
+
+
+# Danger !
+```javascript
+console.log(2+3)
+```
+
+```javascript
+console.log(2+3+'5')
+```
+
+```javascript
+console.log('5'+2+3)
+```
+
+```javascript
+console.log(2+3+'7'+5)
+```
+
+
+
+# Operators
+assignment (=), addition (+)
+
+subtraction (-), multiplication (*)
+
+division (/), modulus (%)
+
+increment (++), decrement (--)
+
+
+
+# Example
+|Operator|Example|Same As|
+|:--------|:--------:|--------:|
+|=|x = y|x = y|
+|+=|x += y|x = x + y|
+|-=|x -= y|x = x - y|
+|*=|x *= y|x = x * y|
+|/=|x /= y|x = x / y|
+|%=|x %= y|x = x % y|
+
+
+
+# Function
+```javascript
+function name(argument) {
+  return // execute your code
+}
+```
+
+```javascript
+const name = (argument) => {
+  return // execute your code
+}
+```
+
+
+
+# Literals string
+```javascript
+`string text`
+```
+
+```javascript
+`string text ${1+2} string text`
+```
+
+
+
+# Real Life Objects, Properties, and Methods
+In real life, a person is an object
+
+| Properties | Methods |
+|:----------:|:-------:|
+|name|speak|
+|age|walk|
+|weight|sleep|
+|eyecolor|eat|
+
+
+
+# Access Properties
+- objectName.propertyName
+- objectName["propertyName"]
+
+**Example**
+
+```javascript
+const person = {
+  name: 'nat',
+  age: 25,
+  weight: 49,
+  eyecolor: 'black'
+}
+console.log(person.name) // nat
+console.log(persone["age"]) // 25
+```
+
+
+
+# String
+```javascript
+const text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+console.log(text.length) //26
+```
+
+
+
+# Danger
+- == equal value
+- === equality in both type and value
+
+```javascript
+console.log(1=='1') // true
+console.log(1==='1') // false
+```
+
+
+
+# Condition
+- if + else
+- if + else if + else
+
+```javascript
+let age = 18
+if(age > 18){
+  console.log('Old enough')
+} else {
+ console.log('Too young')
+}
+```
+
+
+
+# Switch
+```javascript
+switch(expression) {
+    case n:
+        code block
+        break;
+    case n:
+        code block
+        break;
+    default:
+        code block
+}
+```
+
+
+
+# Export vs Export Default
+```javascript
+const hello = (text) => {
+  return `hello ${text}`
+}
+export hello
+```
+
+```javascript
+const hello = (text) => {
+  return `hello ${text}`
+}
+export default { 
+  hello
+}
+```
+
+
+
+# Callback
+```javascript
+fs.readFile('input.txt', (err, data) => {
+   if (err) return console.error(err)
+   console.log(data.toString())
+})
+```
+
+
+
+# Promise
+```javascript
+promise.then((result) => {
+  console.log(result); // "Stuff worked!"
+}, (err) => {
+  console.log(err); // Error: "It broke"
+});
+```
+
+
+
+# Import
+```javascript
+const hello = (text) => {
+  return `hello ${text}`
+}
+export hello
+```
+
+```javascript
+import { hello } from ''
+console.log(hello('nat'))
+```
+
+```javascript
+import { hello as greeting } from ''
+console.log(greeting('nat'))
+```
+
+
+
+# Import
+```javascript
+const hello = (text) => {
+  return `hello ${text}`
+}
+export default { 
+  hello
+}
+```
+
+```javascript
+import greeting from ''
+console.log(greeting.hello('nat'))
+```
+
+
+
+# Express JS
+> Fast, Web minimalist web framework
+
+
+
+# Babel Installing
+```bash
+$ npm install babel-cli babel-preset-env babel-preset-stage-2 --save -D
+$ npm install babel-polyfill --save
+```
+
+
+
+# Express Installing
+```bash
+$ npm install express dotenv body-parser helmet http-status morgan express-validation compression --save
+```
+
+
+
+# HTTP VERB
+| VERB | ACTION | USED FOR |
+|:----:|:------:|:--------:|
+| GET  |        | Retrieve items from resource|
+| POST |        | Create new item in resource |
+| PUT/PATCH|    | Update existing item in resource |
+| DELETE|       | Delete existing item in resource | 
+
+
+
+# Work Shop
+
+
+
+# Mongoose 
+```bash
+$ npm install mongoose bluebird  --save
+```
+
+
+
+# Connection
+```javascript
+import mongoose from 'mongoose'
+mongoose.connect('mongodb://localhost/test')
+```
+
+
+
+# Schema
+```javascript
+import mongoose, { Schema } from 'mongoose'
+const taskSchema = new Schema({
+  message: {
+    type: String,
+    required: true
+  },
+  complete: {
+    type: Boolean,
+    required: true,
+    default: false,
+  }
+})
+export default mongoose.model(`Task`, taskSchema)
+```
+
+
+
