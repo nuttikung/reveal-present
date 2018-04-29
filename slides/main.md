@@ -704,6 +704,17 @@ $ npm install babel-cli babel-preset-env babel-preset-stage-2 --save -D
 $ npm install babel-polyfill --save
 ```
 
+**Create .babelrc**
+```
+{
+  "presets": [
+    "env",
+    "stage-2"
+  ],
+  "plugins": []
+}
+```
+
 
 
 # Express Installing
@@ -723,7 +734,24 @@ $ npm install express dotenv body-parser helmet http-status morgan express-valid
 
 
 
+# Routing
+```javascript
+import express from 'express'
+const PORT = process.env.PORT || 8080
+const app = express()
+app.get('*', res.json({ message: `it's work` }))
+app.listen(PORT)
+```
+
+
+
 # Work Shop
+| Name   | Method | URL            |
+|--------|:------:|:--------------:|
+| LIST   | GET    | /tasks         |
+| CREATE | POST   | /tasks         |
+| UPDATE | PUT    | /tasks/:taskId |
+| REMOVE | DELETE | /tasks/:taskId |
 
 
 
@@ -756,7 +784,23 @@ mongoose.connection.on('error', () => {
 
 
 
+# Plugging in your own Promise lib.
+```javascript
+import Promise from 'bluebird'
+mongoose.Promise = Promise
+```
+
+
+
+# Create Model
+Create Folder 
+models
+
+
+
 # Schema
+Create File **task.js**
+
 ```javascript
 import mongoose, { Schema } from 'mongoose'
 const taskSchema = new Schema({
@@ -771,6 +815,16 @@ const taskSchema = new Schema({
   }
 })
 export default mongoose.model(`Task`, taskSchema)
+```
+
+
+
+# Query
+```javascript
+import Task from '../models/task'
+Task.find({}).then((tasks) => {
+  res.json({ tasks })
+})
 ```
 
 
